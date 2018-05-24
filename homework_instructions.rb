@@ -170,7 +170,13 @@ for countries in united_kingdom
 end
 
 #4. Use a loop to find the total population of the UK.
+total_population = 0
 
+for population in united_kingdom
+  total_population += population[:population]
+  population[:population] = 0
+end
 
+p total_population
 
 # Add CommentCollapse 
